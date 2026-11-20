@@ -70,19 +70,18 @@ Display original color image, histogram, enhanced image, and enhanced histogram 
 ## Program
 
 ### Developed By:
-Name: ASHWIN BAALAJI V K  
+Name: M BALASURIYA
 
-### Register No:
-212225230026
+### Register No: 212224240021
 
 ### Grayscale Histogram Equalization
 
 - Original grayscale image is displayed
- ```
+ ```python
   import cv2
 import matplotlib.pyplot as plt
 
-IMAGE_PATH = "Downloads/JET.jpg"
+IMAGE_PATH = "plane.jpg"
 
 img = cv2.imread(IMAGE_PATH, cv2.IMREAD_GRAYSCALE)
 if img is None:
@@ -95,11 +94,11 @@ plt.show()
 ```
 
 - Histogram of original grayscale image is plotted
-```
+```python
 import cv2
 import matplotlib.pyplot as plt
 
-IMAGE_PATH = "Downloads/JET.jpg"
+IMAGE_PATH = "plane.jpg"
 
 img = cv2.imread(IMAGE_PATH, cv2.IMREAD_GRAYSCALE)
 if img is None:
@@ -112,10 +111,10 @@ plt.ylabel("Frequency")
 plt.show()
 ```
 - Enhanced image after histogram equalization is displayed
-```
+```python
 import cv2
 
-IMAGE_PATH = "Downloads/JET.jpg"
+IMAGE_PATH = "plane.jpg"
 
 img = cv2.imread(IMAGE_PATH, cv2.IMREAD_GRAYSCALE)
 if img is None:
@@ -129,11 +128,11 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ``` 
 - Histogram of enhanced grayscale image shows improved contrast
-```
+```python
 import cv2
 import matplotlib.pyplot as plt
 
-IMAGE_PATH = "Downloads/JET.jpg"
+IMAGE_PATH = "plane.jpg"
 
 img = cv2.imread(IMAGE_PATH, cv2.IMREAD_GRAYSCALE)
 if img is None:
@@ -151,11 +150,11 @@ plt.show()
 ### Color Image Histogram Equalization
 
 - Original color image is displayed
-```
+```python
 import cv2
 import numpy as np
 
-IMAGE_PATH = "Downloads/JET.jpg"
+IMAGE_PATH = "plane.jpg"
 
 img = cv2.imread(IMAGE_PATH, cv2.IMREAD_GRAYSCALE)
 if img is None:
@@ -170,11 +169,11 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ``` 
 - Histogram of B, G, R channels is plotted
-```
+```python
 import cv2
 import matplotlib.pyplot as plt
 
-IMAGE_PATH = "Downloads/JET.jpg"
+IMAGE_PATH = "plane.jpg"
 
 img = cv2.imread(IMAGE_PATH, cv2.IMREAD_GRAYSCALE)
 if img is None:
@@ -198,10 +197,10 @@ plt.tight_layout()
 plt.show()
 ```
 - Enhanced image after HSV-based equalization is displayed
-```
+```python
 import cv2
 
-IMAGE_PATH = "Downloads/JET.jpg"
+IMAGE_PATH = "plane.jpg"
 
 img = cv2.imread(IMAGE_PATH)
 if img is None:
@@ -217,11 +216,11 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ``` 
 - Histogram of enhanced image shows better intensity distribution
-```
+```python
 import cv2
 import numpy as np
 
-IMAGE_PATH = "Downloads/JET.jpg"
+IMAGE_PATH = "plane.jpg"
 
 img = cv2.imread(IMAGE_PATH, cv2.IMREAD_GRAYSCALE)
 if img is None:
@@ -244,38 +243,48 @@ cv2.destroyAllWindows()
 
 - Original grayscale image is displayed
 
-<img width="613" height="320" alt="Screenshot 2026-10-27 092540" src="https://github.com/user-attachments/assets/2dcae5f7-06ab-4e37-9b67-3a624c3fcbf7" />
+<img width="535" height="386" alt="image" src="https://github.com/user-attachments/assets/9f442922-c571-411d-81c3-c9bc664e4551" />
+
 
 - Histogram of original grayscale image is plotted
 
-<img width="845" height="565" alt="Screenshot 2026-10-27 092621" src="https://github.com/user-attachments/assets/1aa36db8-edfc-41e7-bde5-3b8d8b05c9f4" />
+<img width="622" height="461" alt="image" src="https://github.com/user-attachments/assets/3e20a7aa-b8b3-40ae-8823-2dfefda768a5" />
+
 
 - Enhanced image after histogram equalization is displayed
 
- <img width="815" height="422" alt="Screenshot 2026-10-27 092447" src="https://github.com/user-attachments/assets/d9ce2a7b-76b5-494c-aa49-e3b9a17e2c9a" />
+<img width="1535" height="912" alt="image" src="https://github.com/user-attachments/assets/d9d903d3-467a-471a-b48d-0aea5593baa7" />
+
+
 
 - Histogram of enhanced grayscale image shows improved contrast
 
-<img width="801" height="560" alt="Screenshot 2026-10-27 092628" src="https://github.com/user-attachments/assets/18a09952-6f6a-45ec-8af4-c8f248e90a13" />
+<img width="658" height="458" alt="image" src="https://github.com/user-attachments/assets/7287c4df-b7bf-4553-9c63-c616be224aa9" />
+
 
 
 ### Color Image Histogram Equalization
 
 - Original color image is displayed
 
-<img width="1637" height="432" alt="Screenshot 2026-10-27 092514" src="https://github.com/user-attachments/assets/91172746-b20f-462e-9837-581947181a3d" />
+<img width="901" height="483" alt="image" src="https://github.com/user-attachments/assets/a779c00d-670c-4018-b4dc-79cdad8990e2" />
+
 
 - Histogram of B, G, R channels is plotted
 
-<img width="1630" height="430" alt="Screenshot 2026-10-27 092502" src="https://github.com/user-attachments/assets/1114b988-d061-4cfe-a868-44c42031289c" />
+<img width="1003" height="396" alt="image" src="https://github.com/user-attachments/assets/bdbd842c-1d8a-4cf2-a578-cffe0d54d8db" />
+
+
 
 - Enhanced image after HSV-based equalization is displayed
 
-<img width="1627" height="425" alt="Screenshot 2026-10-27 092522" src="https://github.com/user-attachments/assets/980fa66e-75f3-419c-9cdc-c84a6b3b1b42" />
+<img width="898" height="478" alt="image" src="https://github.com/user-attachments/assets/c645325d-ecea-42af-b989-5bc54bb9aeb6" />
+
 
 - Histogram of enhanced image shows better intensity distribution
 
-<img width="1373" height="505" alt="Screenshot 2026-10-27 092638" src="https://github.com/user-attachments/assets/201c345c-8df9-440e-9df6-a0e0c330be75" />
+
+<img width="900" height="482" alt="image" src="https://github.com/user-attachments/assets/8ec59f8b-cb2e-4f2b-b051-134669959253" />
 
 
 
